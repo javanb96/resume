@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a digital CV/Resume for Javan Bunton (Money Smart). It outlines a few things about Money, his public resume, education, skills, some hobbies and interests, a few references, and his contact details.">
+    <!--Dollar Sign Favicon-->
+    <link rel="icon"
+    href="https://clipart-library.com/img/2032148.png"
+    type="image/x-icon">
+    <!--w3school presets-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <!--feather icons-->
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <title>I am Money</title>
+  </head>
+  <body>
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none"> TECHNICALLY JAVAN'S RESUME
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="avatar.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <h2 class="name">Money Smart</h2>
+        <h2 class="name">(Javan Bunton)</h2>
+        <!--SOCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+            <a title="Portfolio" class="icon-link w3-text-sand w3-hover-text-amber" href="https://javanb96.github.io/" target="_blank">
+                <i data-feather="link"></i>
+             </a>
+          <!--Little to no social media prescence -->
+         <!-- <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#twitter" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>  -->
+          <a title="LinkedIn" class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/javan-b-355a50148/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+          <a title="GitHub" class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/javanb96" target="_blank">
+            <i data-feather="github"></i>
+         </a>
+         <a title="Facebook" class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.facebook.com/javan.bunton.37/" target="_blank" onclick="return confirm('WARNING! This content may not be appropriate for all audiences. maybe NSFW, Strong/Offensive language, 18+ Are you sure you want to visit Money\'s Facebook ? #nofilter #comedy #hiphop #pain')">
+            <i data-feather="facebook"></i>
+        </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a title="Download CV" href="./resume-Javan-Bunton-(Money-Smart).pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" download="smart-resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">MONEY'S RESUME</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring."</p>
+            <h1>Marilyn Monroe</h2>
+            <h2>American Actress</h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2">
+                I am a results-driven and motivated Hardware/Software/Data/IT Engineer with a demonstrated
+                experience in tools/terminals, improving hardware miniaturization, software performance, testing
+                and updating existing software and hardware, developing new software functionalities, and data
+                engineering. Offers a proven track record of extraordinary achievements, strong attention to detail,
+                and ability to finish projects on schedule and within budget.
+            </p>
+            <p class="">
+              <strong>11 years ago I became a dedicated entrepreneur for IT at my family foundation, and today I hold 20+ years experience in computing.</strong> I show exceptional skills regarding hardware, software, and data. I have assisted many small businesses/companies in developing systems and other applications for their business needs for free
+              (not for profit). Donations are sometimes presented and accepted. &#128512; Along the way I have picked up various extra skills and am a jack of all trades due
+              to my work. I have improved the workflow for construction and many trades including Carpentry, HVAC,
+              Plumbing, Automotive as well as Landscaping among other service oriented businesses and organizations
+              across America from Vegas to D.C.(outside my field (IT)).
+            </p>
+            <img src="development-map.PNG" alt="Money's presence Development Map" width="100%" height="60%">
+            <p class="">
+              As a techie I have developed a practice of learning and utilizing various technologies not limited to:
+              <ul>
+                <li>Analytics</li>
+                <li>Automation</li>
+                <li>Artificial intelligence</li>
+                <li>Cloud computing</li>
+                <li>Communications</li>
+                <li>Cybersecurity</li>
+                <li>Data/database management</li>
+                <li>Infrastructure</li>
+                <li>Internet of things</li>
+                <li>Machine learning</li>
+                <li>Maintenance and repair</li>
+                <li>Networks</li>
+                <li>Robotics</li>
+                <li>Software/application developement</li>
+                <li>SCADA</li>
+              </ul>
+
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+              <div class="">
+                <h4>Entrepreneur / Technologist</h4>
+                <p>The Smart Learning Foundation - Austin, TX</p>
+                <p>January 2012 to Present</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Learning and developing flows of innovation and creativity while shouldering risk vs. reward in an organized manner; managing client requests with the goal of turning profits in this evolving environment.</li>
+                  <li>Creating and maintaining operational applications during development, testing, and logging electronic data coming in, or out while integrating software/hardware paradigms.</li>
+                  <li>scheduling, and planning. balancing business and personal, monitering finances, programming and hacking; failing forward, maturing and mastering my craft.</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Team Lead</h4>
+                <p>Nevada System of Higher Education - Paradise, NV</p>
+                <p>September 2019 to June 2020 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li>I oversaw a team of student workers and automated a process that backfired because it took away a
+                    job from one of the students. I humbly deleted the program and resigned.</li>
+                    <li> Experienced in web applications development using Django/Python, .NET/C#, Flask/Python, and
+                    Node.js, Angular.js, ember.js, Jquery, Ajax while using HTML/CSS/JS for server-side rendered application
+                    as a technical lead</li>
+                    <li> Developed multi-threaded standalone app in Python, Perl, PHP, C++ to view Circuit parameters and
+                    performance.</li>
+                    <li> Responsible for writing code in Object Oriented Programming supported by Ruby on Rails in Agile
+                        SCRUM environment.
+                    </li>
+                    <li> Written with object-oriented Python, Flask, SQL, Beautiful Soup, httplib2, Jinja2, HTML/CSS, Bootstrap,
+                        jQuery, Linux, Sublime Text, git.
+                    </li>
+                    <li>Full responsibility for SaaS platform with a Ruby on Rails / MySQL technology stack.</li>
+                    <li>Developed multi-threaded standalone app in Python, Perl, PHP, C++ to view Circuit parameters and
+                        performance.</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>HVAC Technician / Software Engineer</h4>
+                <p>Trinity Air - New Braunfels, TX</p>
+                <p>January 2017 to January 2018</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Assisted a Small Business Owner with Commercial HVAC by learning and doing as well as selling and
+                    implementing my software.</li>
+                  <li> Worked on Node.js Middleware framework like Express.js and Hapi.js and Yoemon, essentially
+                    developed microservices and serve them through middleware. Served any Client side libraries through
+                    microservice.</li>
+                  <li> Used backend frameworks Nodejs, Koa (Express), Sequelize ORM, GraphQL, MySQL Database and AWS
+                    Stack</li>
+                <li>Microservice API development using NodeJS, KOA, Docker, and Kubernetes.
+                </li>
+                <li>• Worked on Server frameworks like Express.js, Socket.IO, Koa.js, Hapi JS.
+                </li>
+                <li> Worked on full-stack development, with a focus on react/redux on the front-end and nodejs/koa on
+                    the back-end.
+                </li>
+                <li> Created a crypto currency wallet and a blockchain based reward engagement platform built with React/
+                    Redux/Sagas, Node/Koa.
+                    </li>
+                <li>Developed single page applications using React Redux architecture, ES6, web pack and grunt.
+                </li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Carpenter / Sr. Software/Data Engineer</h4>
+                <p>Bravo Builders - Round Rock, TX</p>
+                <p>January 2016 to January 2018</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Assisted a Small Business Owner with Commercial Construction by learning and doing as well as selling
+                    and implementing my software.
+                    </li>
+                  <li>Worked on Angular with TypeScript and other latest client-side technologies including ReactJS, ES6, Gulp,
+                    NodeJS, RxJS, Angular CLI, Webpack, Karma and Jasmine.</li>
+                  <li> Used Node.JS, React.JS, and Backbone.JS MVC framework for developing the Single Page Application
+                    (SPA). Backend development done using Node.js, Koa, Cassandra, and Redis.
+                    </li>
+                <li>Huge experience working on different Technologies used include VueJS, HTML, SCSS, Cypress, Git,
+                    Tornado, Apollo-GraphQL, SQLAlchemy.</li>
+                <li>Integrated Apollo client with GraphQL database for React and React Native for Payment, Dispatch
+                    services.</li>
+                <li> Experienced in Design, Development, and Implementation of large-scale projects in Financial, Shipping,
+                    and Retail industries using Data Warehousing ETL tools (Pentaho) and Business Intelligence tools.</li>
+                <li> Good exposure to the Data mining tools like SPSS modeler and building Data models using KNN,
+                    clustering, Decision trees, Linear model.</li>
+                <li> Installed and configured Pentaho BI Server on different operating systems like Red Hat, Linux, and
+                    Windows Server.</li>
+                <li> Experience in creating ETL transformations and jobs using Pentaho Kettle Spoon designer and Pentaho
+                    Data Integration Designer and scheduling them on Pentaho BI Server.
+                    </li>
+                <li> Writing complex MDX & DAX formula Develop the complex Dashboard by showing %age values.
+                </li>
+                <li> Deep knowledge of RDBMS (SQL Server, MySQL, DB2, etc) and NoSQL databases such as MongoDB,
+                    DynamoDB, and Cassandra</li>
+                </ul>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+                <h4>The Smart Learning Foundation, Austin</h4>
+                <p>February 2000 to Present</p>
+                <h4>University of Nevada, Las Vegas</h4>
+                <p>August 2019 to June 2020</p>
+                <h4>Highschool diploma, Lehman Highschool, Kyle</h4>
+                <p>August 2010 - June 2014 </p>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <h4>Soft skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>I have excellent communication skill and confidence in front of an audience; I hold leadership qualities, and am highly motivated in teamwork and creativity</li>
+                <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
+                <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                <li>I am a problem-solver and a critical thinker. very adaptable and resourceful; I take everything with a grain of salt, and am open to criticism.</li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <h4>Technical skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I am pretty much considered an intermediate-expert in all things IT due to my early exposure and fascination with technology.</li>
+                  <li>I have a great experience with MS Office tools, Google Docs tools, and even other open-source suites.</li>
+                  <li>I am proficient in technical writing.</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts.</li>
+                </ul>
+                <p style="font-weight: 500;">Other Technical skills I hold and am not limited to are:</p>
+                <ul style="font-weight: 500;">
+                    <li>Data analysis</li>
+                    <li>Web development</li>
+                    <li>Systems development</li>
+                    <li>Computer programming Languages</li>
+                    <li>Low-voltage electronics development</li>
+                    <li>Financial management</li>
+                    <li>Bookkeeping</li>
+                    <li>UX design</li>
+                    <li>Graphic design</li>
+                    <li>Writing</li>
+                    <li>Cooking</li>
+                </ul>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I love to go on walks</li>
+                  <li>I love mountain hiking and cycling in my free time</li>
+                  <li>I love to play board/card/video games with other people</li>
+                  <li>I like to talk and sit, eat food and drink with friends</li>
+                  <li>I like to write poetry, songs, and jokes</li>
+                  <li>I like to read fantasy or informative things</li>
+                  <li>hunting, fishing, and foraging is cool</li>
+                </ul>
+            </div>
+
+            <!--REFERENCE SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY REFERENCES</h3>
+              <h4>Tom Snow, Responsible Master Plumber at Balcones Plumbing</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+15124091607</li>
+                <li>balconesplumbing@gmail.com</li>
+                <li>https://balconesplumbing.com/</li>
+              </ul>
+              <h4>Keenen Roland, CEO at Company-X </h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+15129924247</li>
+                <li>keenenr@gmail.com</li>
+              </ul>
+            </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+                <address>
+                <p>Name: Money Smart (Javan Bunton)</p>
+                <p>Address: <a href="#" onclick='window.open("https://goo.gl/maps/bEkuzhvFSUTBfjRK7");return false;'>East 6th St, 78702 Austin, Texas</a></p>
+                <p>Phone number: <a href="tel:5124357772">(512) 435-7772</a></p>
+                <p>E-mail: <a href="mailto:javanb96@gmail.com?subject=Hello Javan">javanb96@gmail.com</a></p>
+                </address>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023 - Money Smart</p>
+          <!--
+           <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
+          -->
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else {
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
